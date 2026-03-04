@@ -1,0 +1,8 @@
+# Ignore the large dataset (users should download it from Kaggle)
+*.csv
+*.zip
+
+# Ignore Python caches and Colab checkpoints
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
