@@ -44,3 +44,18 @@ A hybrid machine learning pipeline that combines:
    This writes the fitted scaler, K-means model, Random Forest and XGBoost models, and `metrics.json` to `models/`.
 
 The notebook remains the record of the exploratory analysis and results.
+
+## 📊 Dashboard
+
+The Streamlit dashboard (`app.py`) reads the trained models from `models/` and the data from `app_data/`. Both are produced by `train.py`.
+
+Run it locally:
+```bash
+streamlit run app.py
+```
+
+Deploy on Streamlit Community Cloud:
+1. Run `train.py` on your own machine so `models/` and `app_data/` are created.
+2. Commit and push them. `app_data/*.csv` is tracked with Git LFS, so install Git LFS first.
+3. On [share.streamlit.io](https://share.streamlit.io), create a new app from this repo. Set the main file to `app.py`.
+4. Under **Advanced settings**, choose Python 3.11 to match `requirements.txt`.

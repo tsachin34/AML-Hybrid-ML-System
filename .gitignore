@@ -6,3 +6,7 @@
 __pycache__/
 .ipynb_checkpoints/
 .DS_Store
+
+# Dashboard data is tracked with Git LFS (see .gitattributes)
+!app_data/
+!app_data/*.csv
