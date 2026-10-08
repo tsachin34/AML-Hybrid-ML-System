@@ -10,3 +10,4 @@ __pycache__/
 # Dashboard data is tracked with Git LFS (see .gitattributes)
 !app_data/
 !app_data/*.csv
+.venv/
